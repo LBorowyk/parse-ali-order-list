@@ -1,12 +1,26 @@
-import pychrome
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.common.exceptions import NoSuchElementException
+
 import time
+# import pychrome
 
 from cookie_tools import auth
 from create_browser import create_chrome_driver
 
+from selenium.webdriver.support.expected_conditions import staleness_of
+
+def wait_for_page_load(driver, timeout=30):
+    old_page = driver.find_elements(By.CLASS_NAME, "order-wrap")
+    yield
+    WebDriverWait(driver, timeout).until(
+        staleness_of(old_page)
+    )
+
 print('Hello selenium')
 url = "https://www.aliexpress.com/p/order/index.html"
+# url = "https://fox.com"
 
 print('create browser:')
 driver = create_chrome_driver()
@@ -17,60 +31,40 @@ driver.get(url)
 print('start auth:')
 auth(driver, 'session')
 
-def output_start(**kwargs):
-    print('start', kwargs)
+def get_order_items(driver):
+    return driver.find_elements(By.CLASS_NAME, "order-item")
 
-dev_tools = pychrome.Browser(url="http://localhost:9090")
-tab = dev_tools.list_tab()[0]
-tab.start()
+def get_order_more_button(driver):
+    try:
+        order_mode = driver.find_element(By.CLASS_NAME, "order-more")
+        print(order_mode, order_mode is not None)
+        return order_mode.find_element(By.TAG_NAME, "button") if order_mode is not None else None
+    except NoSuchElementException:
+        return None
 
-driver.get(url)
+print("Wait for order-content")
+WebDriverWait(driver, timeout=30).until(lambda d: d.find_element(By.CLASS_NAME,"order-content"))
 
-tab.call_method(
-    "Network.emulateNetworkConditions", 
-    offline=False,
-    latency=100,
-    downloadThroughput=93750,
-    uploadThroughput=31250,
-    connectionType="wifi"
-)
+print("I`m ready to parsing")
 
-tab.call_method("Network.enable", _timeout=20)
-tab.set_listener("Network.requestWillBeSent", output_start)
+current_items_len = len(get_order_items(driver))
+order_more_button = get_order_more_button(driver)
 
+while order_more_button is not None:
+    ActionChains(driver).move_to_element(order_more_button).perform()
+    order_more_button.click()
+    WebDriverWait(driver, timeout=30).until(lambda d: len(get_order_items(driver)) > current_items_len)
+    current_items_len = len(get_order_items(driver))
+    order_more_button = get_order_more_button(driver)
 
-
-
-# submit_button = driver.find_element(By.CLASS_NAME, "comet-btn-primary")
-# if submit_button is not None:
-#     submit_button.click()
-#     print('submit_button click')
-
-
-
-
-# print('Get requests:')
-# print(driver.requests)
-
-# for request in driver.requests:
-#     if request.response:
-#         print(
-#             request.url,
-#             request.response.status_code, 
-#             request.response.headers['Content-Type']
-#         )
-
-# print("I`m ready to parsing")
-
-# items = driver.find_elements(By.CLASS_NAME, "order-item")
-# print(items)
+items = get_order_items(driver)
+print("items length = ", len(items))
 
 # for item in items: 
 #     links = item.find_elements(By.TAG_NAME, "a")
-#     print(links)
+#     # print(links)
 
-# time.sleep(2000)
-
+time.sleep(200)
 
 driver.quit()
 print('Finish parsing')

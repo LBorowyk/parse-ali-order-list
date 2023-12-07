@@ -1,5 +1,7 @@
-from selenium import webdriver
+from seleniumwire  import webdriver
+# from selenium import webdriver
 from selenium_stealth import stealth
+# from webdriver_manager.chrome import ChromeDriverManager
 
 def init_stealth(driver):
     stealth(
@@ -18,9 +20,12 @@ def create_chrome_driver():
 
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option("useAutomationExtension", False)
-    options.add_argument("--remote-debugging-port=9090")
+    # options.add_argument("--remote-debugging-port=8000")
     options.headless = True
-    driver = webdriver.Chrome(options=options)
+    # driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(options=options, seleniumwire_options={})
+    # driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+
     init_stealth(driver)
     return driver
 
