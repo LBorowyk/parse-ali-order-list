@@ -18,6 +18,7 @@ def create_chrome_driver():
 
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option("useAutomationExtension", False)
+    options.add_argument("--remote-debugging-port=9090")
     options.headless = True
     driver = webdriver.Chrome(options=options)
     init_stealth(driver)

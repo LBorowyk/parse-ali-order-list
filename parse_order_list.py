@@ -17,6 +17,26 @@ driver.get(url)
 print('start auth:')
 auth(driver, 'session')
 
+def output_start(**kwargs):
+    print('start', kwargs)
+
+dev_tools = pychrome.Browser(url="http://localhost:9090")
+tab = dev_tools.list_tab()[0]
+tab.start()
+
+driver.get(url)
+
+tab.call_method(
+    "Network.emulateNetworkConditions", 
+    offline=False,
+    latency=100,
+    downloadThroughput=93750,
+    uploadThroughput=31250,
+    connectionType="wifi"
+)
+
+tab.call_method("Network.enable", _timeout=20)
+tab.set_listener("Network.requestWillBeSent", output_start)
 
 
 
@@ -27,7 +47,7 @@ auth(driver, 'session')
 #     print('submit_button click')
 
 
-driver.get(url)
+
 
 # print('Get requests:')
 # print(driver.requests)
@@ -50,5 +70,7 @@ driver.get(url)
 #     print(links)
 
 # time.sleep(2000)
+
+
 driver.quit()
 print('Finish parsing')
