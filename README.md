@@ -2,6 +2,5 @@
 
 ## Бібліотеки
 - pip install selenium
-- pip install seleniumwire
+- pip install selenium-wire
 - pip install selenium_stealth
-- pip install pickle

@@ -1,12 +1,12 @@
-from seleniumwire  import webdriver
+from seleniumwire import webdriver
 from selenium_stealth import stealth
+from selenium.common.exceptions import NoSuchDriverException
 import time
 
 class ChromeDriver:
     def __enter__(self):
         print('Start creating browser:')
         self.driver = self.create_driver()
-        print('Browser created')
         return self.driver
 
     def __exit__(self, exc_type, exc_value, traceback):
@@ -20,6 +20,10 @@ class ChromeDriver:
 
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
+        # options.add_argument('--allow-insecure-localhost')
+        options.add_argument("--ignore-ssl-errors=yes")
+        options.add_argument("--ignore-certificate-errors")
+        options.add_argument("--disable-proxy-certificate-handler")
         # options.add_argument("--remote-debugging-port=8000")
         options.headless = True
         return options
@@ -36,7 +40,23 @@ class ChromeDriver:
         )
     
     def create_driver(self):
-        driver = webdriver.Chrome(options=self.form_chrome_options(), seleniumwire_options={})
+        try:
+            driver = webdriver.Chrome(
+                options=self.form_chrome_options(),
+                seleniumwire_options={}
+            )
+        except NoSuchDriverException:
+            print("Can't open chrome. ChromeDriverManager is using")
+            from selenium.webdriver.chrome.service import Service as ChromeService
+            from webdriver_manager.chrome import ChromeDriverManager
+            driver = webdriver.Chrome(
+                service=ChromeService(ChromeDriverManager().install()),
+                options=self.form_chrome_options(),
+                seleniumwire_options={}
+            )
         self.init_stealth(driver)
+        print('Browser created')
         return driver
+
+
 
