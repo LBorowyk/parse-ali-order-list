@@ -20,10 +20,14 @@ class ChromeDriver:
 
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
-        # options.add_argument('--allow-insecure-localhost')
-        options.add_argument("--ignore-ssl-errors=yes")
-        options.add_argument("--ignore-certificate-errors")
-        options.add_argument("--disable-proxy-certificate-handler")
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--headless')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--allow-running-insecure-content')
+        options.add_argument('--ignore-certificate-errors')
+        # options.add_argument("--ignore-ssl-errors=yes")
+        # options.add_argument("--disable-proxy-certificate-handler")
         # options.add_argument("--remote-debugging-port=8000")
         options.headless = True
         return options
