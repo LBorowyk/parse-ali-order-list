@@ -1,11 +1,8 @@
 from selenium.webdriver.common.by import By
+from ali_order.order_tracking_details_parser import ParseTrackingInfo
 from tools.base_utils import find, replace_mass
 from tools.webpage_utils import scroll_to, wait_for
-from selenium.common.exceptions import NoSuchElementException
-
-
-def form_track_ali_url(order_id):
-    return "https://track.aliexpress.com/logisticsdetail.htm?tradeId=" + order_id
+from tools.base_parse_page import ParsePage
 
 
 def extract_element_by_tag(items, tag):
@@ -22,51 +19,6 @@ def form_tag_value_items(items, tag_func, el_func=lambda el: get_text_excluding_
     return list({"value": el_func(el), "tag": tag_func(el)} for el in items)
 
 
-class ParsePage:
-    def __init__(self, driver):
-        self.driver = driver
-
-
-class ParseTrackInfo(ParsePage):
-    def __init__(self, driver, order_detail_id):
-        super().__init__(driver)
-        self.order_detail_id = order_detail_id
-        self.parse_tracking_details()
-        print('Tracking parsing complete.')
-
-    def load_tracking_page(self):
-        self.driver.get(form_track_ali_url(self.order_detail_id))
-        wait_for(self.driver, lambda d: d.find_element(By.CLASS_NAME, 'main-wrapper'))
-
-    @staticmethod
-    def parse_tracking_info(tracking_block, tracking_code_class='tracking-no'):
-        tracking_name_block = tracking_block.find_element(By.CLASS_NAME, 'tracking-name')
-        return {
-            "tracking_name": tracking_name_block.find_element(By.CLASS_NAME, 'title').text.strip(),
-            "tracking_tag": tracking_name_block.find_element(By.CLASS_NAME, 'tag').text.strip(),
-            "tracking_code": tracking_block.find_element(
-                By.CLASS_NAME, tracking_code_class
-            ).find_element(By.TAG_NAME, 'span').text.strip()
-        }
-
-    def parse_tracking_details(self):
-        self.load_tracking_page()
-        try:
-            tracking_block = self.driver.find_element(By.CLASS_NAME, 'tracking-detail')
-            if tracking_block:
-                track_info = self.parse_tracking_info(tracking_block)
-                (self.tracking_name, self.tracking_tag, self.tracking_code) = (track_info[tag] for tag in [
-                    'tracking_name', 'tracking_tag', 'tracking_code'
-                ])
-                self.other_track_codes = list(
-                    self.parse_tracking_info(other_tracking_block_n, 'tracking-no-de')
-                    for other_tracking_block_n in self.driver.find_elements(By.CLASS_NAME, 'tracking-detail-n')
-                )
-        except NoSuchElementException:
-            print("Order " + self.order_detail_id + " has no tracking information")
-            (self.tracking_name, self.tracking_tag, self.tracking_code, self.other_track_codes) = (None, None, None, [])
-
-
 class ParsedOrderDetails(ParsePage):
     def __init__(self, driver):
         super().__init__(driver)
@@ -74,9 +26,9 @@ class ParsedOrderDetails(ParsePage):
         self.parse_contact_info()
         self.price = self.parse_order_price()
         (self.store, self.store_href) = self.parse_store()
-        self.
+        self.items = self.parse_items()
         print("Parse tracking info:")
-        self.tracking = ParseTrackInfo(self.driver, self.order_detail_id)
+        self.tracking = ParseTrackingInfo(self.driver, self.order_detail_id)
 
     def to_string(self):
         return f'''
@@ -168,3 +120,6 @@ class ParsedOrderDetails(ParsePage):
             store_item.text.strip(),
             store_item.find_element(By.XPATH, '..').get_attribute('href')
         )
+    
+    def parse_items(self):
+        return []
