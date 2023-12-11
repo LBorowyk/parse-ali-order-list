@@ -3,6 +3,7 @@ from selenium_stealth import stealth
 from selenium.common.exceptions import NoSuchDriverException
 import time
 
+
 class ChromeDriver:
     def __enter__(self):
         print('Start creating browser:')
@@ -14,25 +15,30 @@ class ChromeDriver:
         self.driver.quit()
         print('Finish parsing')
 
-    def form_chrome_options(self):
+    @staticmethod
+    def form_chrome_options():
         options = webdriver.ChromeOptions()
         options.add_argument("start_maximized")
 
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-gpu')
-        options.add_argument('--headless')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--allow-running-insecure-content')
-        options.add_argument('--ignore-certificate-errors')
-        # options.add_argument("--ignore-ssl-errors=yes")
-        # options.add_argument("--disable-proxy-certificate-handler")
-        # options.add_argument("--remote-debugging-port=8000")
+        for agrument in [
+            # '--no-sandbox',
+            # '--disable-gpu',
+            # '--headless',
+            # '--disable-dev-shm-usage',
+            # '--allow-running-insecure-content',
+            # '--ignore-certificate-errors',
+            # '--ignore-ssl-errors=yes',
+            # '--disable-proxy-certificate-handler',
+            # '--remote-debugging-port=8000'
+        ]:
+            options.add_argument(agrument)
         options.headless = True
         return options
 
-    def init_stealth(self, driver):
+    @staticmethod
+    def init_stealth(driver):
         stealth(
             driver,
             languages=["en-US", "en"],
@@ -61,6 +67,3 @@ class ChromeDriver:
         self.init_stealth(driver)
         print('Browser created')
         return driver
-
-
-
