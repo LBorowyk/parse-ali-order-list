@@ -8,6 +8,7 @@ class ChromeDriver:
     def __enter__(self):
         print('Start creating browser:')
         self.driver = self.create_driver()
+        self.driver.minimize_window()
         return self.driver
 
     def __exit__(self, exc_type, exc_value, traceback):
@@ -16,25 +17,23 @@ class ChromeDriver:
         print('Finish parsing')
 
     @staticmethod
-    def form_chrome_options():
+    def form_chrome_options(browser_arguments=(
+        # '--no-sandbox',
+        # '--disable-gpu',
+        # '--headless',
+        # '--disable-dev-shm-usage',
+        # '--allow-running-insecure-content',
+        # '--ignore-certificate-errors',
+        # '--ignore-ssl-errors=yes',
+        # '--disable-proxy-certificate-handler',
+        # '--remote-debugging-port=8000'
+    )):
         options = webdriver.ChromeOptions()
-        options.add_argument("start_maximized")
 
         options.add_experimental_option("excludeSwitches", ["enable-automation"])
         options.add_experimental_option("useAutomationExtension", False)
-        for agrument in [
-            # '--no-sandbox',
-            # '--disable-gpu',
-            # '--headless',
-            # '--disable-dev-shm-usage',
-            # '--allow-running-insecure-content',
-            # '--ignore-certificate-errors',
-            # '--ignore-ssl-errors=yes',
-            # '--disable-proxy-certificate-handler',
-            # '--remote-debugging-port=8000'
-        ]:
+        for agrument in browser_arguments:
             options.add_argument(agrument)
-        options.headless = True
         return options
 
     @staticmethod

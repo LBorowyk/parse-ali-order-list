@@ -14,10 +14,13 @@ def load_cookies(driver, cookie_file_name):
 
 
 def auth(driver, cookie_file_name):
+    driver.minimize_window()
     if isfile(cookie_file_name):
         print('Cookie file was found. start loading cookie')
         load_cookies(driver, cookie_file_name)
+        driver.maximize_window()
     else:
+        driver.maximize_window()
         input('Did you have sign in?')
         print('Start cookie saving')
         dump_cookies(driver, cookie_file_name)

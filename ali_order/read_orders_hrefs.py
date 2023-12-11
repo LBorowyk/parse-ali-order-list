@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
-from webpage_utils import wait_for, scroll_to
+from tools.webpage_utils import wait_for, scroll_to
 
 
 def get_order_items(driver):
@@ -23,6 +23,7 @@ def get_order_detail_href(item):
 def load_full_order_list(driver):
     print("Wait for order-content")
     wait_for(driver, lambda d: d.find_element(By.CLASS_NAME, "order-content"))
+    # driver.minimize_window()
 
     print("I`m ready to parsing")
     """

@@ -1,5 +1,5 @@
-from cookie_tools import auth
-from create_browser import ChromeDriver
+from tools.cookie_tools import auth
+from tools.create_browser import ChromeDriver
 from order_parser import ParsedOrderDetails
 from read_orders_hrefs import get_orders_hrefs, wait_for, By
 
@@ -18,7 +18,7 @@ def parse_order_list():
         print('get orders hrefs:')
         hrefs = get_orders_hrefs(driver)
 
-        for order_detail_href in hrefs[5:9]:
+        for order_detail_href in hrefs[5:6]:
             driver.get(order_detail_href)
             wait_for(driver, lambda d: d.find_element(By.CLASS_NAME, "order-wrap"))
             item = ParsedOrderDetails(driver)

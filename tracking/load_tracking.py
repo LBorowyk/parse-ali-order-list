@@ -1,4 +1,4 @@
-from create_browser import ChromeDriver
+from tools.create_browser import ChromeDriver
 
 
 tracking_url = 'https://global.cainiao.com/newDetail.htm'
