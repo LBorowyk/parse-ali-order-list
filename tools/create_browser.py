@@ -12,9 +12,9 @@ class ChromeDriver:
         return self.driver
 
     def __exit__(self, exc_type, exc_value, traceback):
-        time.sleep(200)
-        self.driver.quit()
         print('Finish parsing')
+        self.driver.quit()
+        print('done.')
 
     @staticmethod
     def form_chrome_options(browser_arguments=(

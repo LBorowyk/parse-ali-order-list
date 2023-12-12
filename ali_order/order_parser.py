@@ -1,22 +1,8 @@
 from selenium.webdriver.common.by import By
+from ali_order.order_item_details_parser import OrderItemDetailsParser
 from ali_order.order_tracking_details_parser import ParseTrackingInfo
-from tools.base_utils import find, replace_mass
 from tools.webpage_utils import scroll_to, wait_for
-from tools.base_parse_page import ParsePage
-
-
-def extract_element_by_tag(items, tag):
-    element = find(lambda item: item['tag'] == tag if tag is not None else item['tag'] is None, items)
-    return element['value'] if element is not None else None
-
-
-def get_text_excluding_children(element):
-    child_texts = (c.text for c in element.find_elements(By.XPATH, ".//*"))
-    return replace_mass(element.text, child_texts, '').strip()
-
-
-def form_tag_value_items(items, tag_func, el_func=lambda el: get_text_excluding_children(el)):
-    return list({"value": el_func(el), "tag": tag_func(el)} for el in items)
+from tools.base_parse_page import ParsePage, form_tag_value_items, extract_element_by_tag
 
 
 class ParsedOrderDetails(ParsePage):
@@ -26,11 +12,14 @@ class ParsedOrderDetails(ParsePage):
         self.parse_contact_info()
         self.price = self.parse_order_price()
         (self.store, self.store_href) = self.parse_store()
+        print("Parse items:")
         self.items = self.parse_items()
         print("Parse tracking info:")
         self.tracking = ParseTrackingInfo(self.driver, self.order_detail_id)
 
     def to_string(self):
+        items_str = '\n'.join(item.to_string() for item in self.items)
+
         return f'''
         status = {self.status}
         contact_name = {self.contact_name}
@@ -48,6 +37,7 @@ class ParsedOrderDetails(ParsePage):
             tracking_code = {self.tracking.tracking_code},
             other_track_codes = {self.tracking.other_track_codes}
         }}
+        items = {{{items_str}}}
         '''
     
     def parse_status(self):
@@ -122,4 +112,8 @@ class ParsedOrderDetails(ParsePage):
         )
     
     def parse_items(self):
-        return []
+        return list(
+            OrderItemDetailsParser(self.driver, element) for element in self.driver.find_elements(
+                By.CLASS_NAME, 'order-detail-item-content-wrap'
+            )
+        )
