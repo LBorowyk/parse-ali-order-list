@@ -11,6 +11,10 @@ class ParseTrackingInfo(ParsePage):
         print('Tracking parsing complete.')
 
     @staticmethod
+    def form_snapshot_url(order_id):
+        return "https://www.aliexpress.com/snapshot/0.html?orderId=" + order_id
+
+    @staticmethod
     def form_track_ali_url(order_id):
         return "https://track.aliexpress.com/logisticsdetail.htm?tradeId=" + order_id
     
