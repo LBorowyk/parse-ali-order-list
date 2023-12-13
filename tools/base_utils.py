@@ -13,8 +13,12 @@ def clear_number_str(s):
 
 
 def extract_url_from_style(s):
-    res = re.search(r'url\(([^)]+)\)', s)
+    res = re.search(r'url\("([^)]+)"\)', s)
     return res.group(1) if res else None
+
+
+def extract_file_name_from_url(url):
+    return url.split('/')[-1]
 
 
 def to_float(s):

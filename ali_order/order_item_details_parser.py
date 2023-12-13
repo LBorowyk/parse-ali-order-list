@@ -10,8 +10,6 @@ class OrderItemDetailsParser(ParsePage):
         self.title = self.parse_title()
         self.properties = self.parse_properties()
         (self.price, self.count) = self.parse_price_and_count()
-        self.subtotal = self.calc_subtotal()
-        self.total = self.calc_total()
         (self.image_url, self.item_url) = self.parse_item_image()
         self.tags = self.parse_tags()
         self.item_tracking_info = self.parse_item_tracking_info()
@@ -22,8 +20,6 @@ class OrderItemDetailsParser(ParsePage):
             title = {self.title}
             properties = {self.properties}
             item_tracking_info = {self.item_tracking_info}
-            subtotal = {self.subtotal}
-            total = {self.total}
             price = {self.price}
             count = {self.count}
             tags = {self.tags}
@@ -31,12 +27,6 @@ class OrderItemDetailsParser(ParsePage):
             image_url = {self.image_url}
             item_url = {self.item_url}
         '''
-
-    def calc_subtotal(self):
-        return to_float(self.price[0]['value'])
-
-    def calc_total(self):
-        return to_float(self.price[-1]['value'])
     
     def parse_title(self):
         return self.element.find_element(

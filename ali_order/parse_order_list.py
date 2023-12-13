@@ -1,7 +1,9 @@
+from tools.base_utils import extract_file_name_from_url
 from tools.cookie_tools import auth
 from tools.create_browser import ChromeDriver
 from ali_order.order_parser import ParsedOrderDetails
 from ali_order.read_orders_hrefs import get_orders_hrefs, wait_for, By
+from tools.file_tools import save_image, download_image
 
 
 def parse_order_list():
@@ -17,10 +19,17 @@ def parse_order_list():
 
         print('get orders hrefs:')
         hrefs = get_orders_hrefs(driver)
-        # hrefs = hrefs[5:10]
-        hrefs = hrefs[0:3]
+        hrefs = hrefs[0:5]
+        # hrefs = hrefs[0:3]
         for order_detail_href in hrefs:
             driver.get(order_detail_href)
             wait_for(driver, lambda d: d.find_element(By.CLASS_NAME, "order-wrap"))
             item = ParsedOrderDetails(driver)
+            for detail in item.items:
+                if detail.image_url:
+                    save_image(
+                        download_image(detail.image_url),
+                        extract_file_name_from_url(detail.image_url)
+                    )
+
             print(item.to_string())

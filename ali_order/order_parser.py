@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from ali_order.order_item_details_parser import OrderItemDetailsParser
 from ali_order.order_tracking_details_parser import ParseTrackingInfo
+from tools.base_utils import to_float
 from tools.webpage_utils import scroll_to, wait_for
 from tools.base_parse_page import ParsePage, form_tag_value_items, extract_element_by_tag
 
@@ -11,6 +12,8 @@ class ParsedOrderDetails(ParsePage):
         self.status = self.parse_status()
         self.parse_contact_info()
         self.price = self.parse_order_price()
+        self.subtotal = self.calc_subtotal()
+        self.total = self.calc_total()
         (self.store, self.store_href) = self.parse_store()
         print("Parse items:")
         self.items = self.parse_items()
@@ -29,6 +32,8 @@ class ParsedOrderDetails(ParsePage):
         order_detail_date = {self.order_detail_date}
         order_detail_payment = {self.order_detail_payment},
         price = {self.price},
+        subtotal = {self.subtotal}
+        total = {self.total}
         store = {self.store}
         store_href = {self.store_href}
         tracking = {{
@@ -40,6 +45,12 @@ class ParsedOrderDetails(ParsePage):
         items = {{{items_str}}}
         '''
     
+    def calc_subtotal(self):
+        return to_float(self.price[0]['value'])
+
+    def calc_total(self):
+        return to_float(self.price[-1]['value'])
+
     def parse_status(self):
         return self.driver.find_element(By.CLASS_NAME, "order-block-title").text
 
