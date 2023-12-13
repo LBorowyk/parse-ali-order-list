@@ -12,6 +12,11 @@ def clear_number_str(s):
     return re.sub(r'[^0-9\.-]', '', s)
 
 
+def extract_url_from_style(s):
+    res = re.search(r'url\(([^)]+)\)', s)
+    return res.group(1) if res else None
+
+
 def to_float(s):
     return float(clear_number_str(s))
 
