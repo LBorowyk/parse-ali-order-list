@@ -1,3 +1,4 @@
+from selenium.common import TimeoutException
 from selenium.webdriver.common.by import By
 from tools.base_parse_page import ParsePage
 from tools.webpage_utils import wait_for
@@ -20,21 +21,31 @@ class ParseTrackingInfo(ParsePage):
     
     def load_tracking_page(self):
         self.driver.get(self.form_track_ali_url(self.order_detail_id))
-        wait_for(self.driver, lambda d: d.find_element(By.CLASS_NAME, 'main-wrapper'))
+        try:
+            wait_for(self.driver, lambda d: d.find_element(By.CLASS_NAME, 'main-wrapper'))
+            return True
+        except TimeoutException:
+            print("Can`t load traching page for ", self.order_detail_id)
+            return False
+
 
     @staticmethod
     def parse_tracking_info(tracking_block, tracking_code_class='tracking-no'):
+        def get_text(find_element_func):
+            element = ParsePage.try_find(find_element_func)
+            return element.text.strip() if element else None
         tracking_name_block = ParsePage.try_find(lambda: tracking_block.find_element(By.CLASS_NAME, 'tracking-name'))
         return {
-            "tracking_name": tracking_name_block.find_element(By.CLASS_NAME, 'title').text.strip(),
-            "tracking_tag": tracking_name_block.find_element(By.CLASS_NAME, 'tag').text.strip(),
-            "tracking_code": tracking_block.find_element(
+            "tracking_name": get_text(lambda: tracking_name_block.find_element(By.CLASS_NAME, 'title')),
+            "tracking_tag": get_text(lambda: tracking_name_block.find_element(By.CLASS_NAME, 'tag')),
+            "tracking_code": get_text(lambda: tracking_block.find_element(
                 By.CLASS_NAME, tracking_code_class
-            ).find_element(By.TAG_NAME, 'span').text.strip()
+            ).find_element(By.TAG_NAME, 'span'))
         } if tracking_name_block else {}
 
     def parse_tracking_details(self):
-        self.load_tracking_page()
+        if not self.load_tracking_page():
+            return
         tracking_block = self.try_find(lambda: self.driver.find_element(By.CLASS_NAME, 'tracking-detail'))
         if tracking_block:
             track_info = self.parse_tracking_info(tracking_block)

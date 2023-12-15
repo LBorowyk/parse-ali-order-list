@@ -22,21 +22,23 @@ def get_order_detail_href(item):
 
 def load_full_order_list(driver):
     print("Wait for order-content")
-    wait_for(driver, lambda d: d.find_element(By.CLASS_NAME, "order-content"))
+    wait_for(driver, lambda d: d.find_element(By.CLASS_NAME, "order-content"), 100)
     # driver.minimize_window()
 
-    print("I`m ready to parsing")
-    """
-    current_items_len = len(get_order_items(driver))
+    def calc_order_items_len(d):
+        return len(get_order_items(d))
+
+    current_items_len = calc_order_items_len(driver)
     order_more_button = get_order_more_button(driver)
 
-    while order_more_button is not None and current_items_len < 20:
+    while order_more_button is not None:
         scroll_to(driver, order_more_button)
         order_more_button.click()
-        wait_for(driver, lambda d: len(get_order_items(d)) > current_items_len)
-        current_items_len = len(get_order_items(driver))
+        wait_for(driver, lambda d: calc_order_items_len(d) > current_items_len)
+        current_items_len = calc_order_items_len(driver)
         order_more_button = get_order_more_button(driver)
-    """
+
+    print("I`m ready to parsing")
 
 
 def get_orders_hrefs(driver):

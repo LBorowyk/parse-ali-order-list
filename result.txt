@@ -1,0 +1,640 @@
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181682166138719
+        order_detail_date = Dec 14, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$2.44'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Store Coupon', 'value': '-$2.00'}, {'title': 'Coins', 'value': '-$0.04'}, {'title': 'AliExpress Coupon', 'value': '-$0.11'}, {'title': 'Total', 'value': '$0.29'}],
+        subtotal = 2.44
+        total = 0.29
+        store = KATAHUI Store
+        store_href = https://www.aliexpress.com/store/912679871
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = Square Air Fryer Silicone Pot Heat Resistant Easy Cleaning Reusable Thin Food Safe Accessories 3-6 Qt for Air Fryer Silicone Pot
+            properties = ['Green 23cmx21cm']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': None}
+            price = 2.44
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/S48f57933520246aea032defee9c4e6f0v.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005005217723149.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Borovik Oksana
+        contact_phone = +380 669607357
+        delivery_address = Myrhorodskyi, Poltavska, Ukraine, 37232
+        order_detail_id = 8181994765488719
+        order_detail_date = Dec 14, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.34'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Coins', 'value': '-$0.02'}, {'title': 'Total', 'value': '$0.32'}],
+        subtotal = 0.34
+        total = 0.32
+        store = Shop1102776140 Store
+        store_href = https://www.aliexpress.com/store/1102776140
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = Car sticker carbon fiber decorative strip For BMW E46 E60 E90 F20 E87 E81 E91 E92 E30 F11 E38 F22 F34 E61 E93 E65 E82 F07 F36 M
+            properties = ['4pcs For ---BMW']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 18, 2024', 'last_track_status': None}
+            price = 0.34
+            count = 1
+            tags = []
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 18, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/S561d5dc3d64b4915aef9701763288d93J.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005005512119270.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181689061348719
+        order_detail_date = Dec 14, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.34'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Coins', 'value': '-$0.02'}, {'title': 'Total', 'value': '$0.32'}],
+        subtotal = 0.34
+        total = 0.32
+        store = Shop1102776140 Store
+        store_href = https://www.aliexpress.com/store/1102776140
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = Car sticker carbon fiber decorative strip For BMW E46 E60 E90 F20 E87 E81 E91 E92 E30 F11 E38 F22 F34 E61 E93 E65 E82 F07 F36 M
+            properties = ['4pcs For ---BMW']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': None}
+            price = 0.34
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/S561d5dc3d64b4915aef9701763288d93J.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005005512119270.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8182128787968719
+        order_detail_date = Dec 14, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.15'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Total', 'value': '$0.15'}],
+        subtotal = 0.15
+        total = 0.15
+        store = Shop1103375191 Store
+        store_href = https://www.aliexpress.com/store/1103375191
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = 100000mAh Power Bank Type C PD 65W Fast Charging Powerbank External Battery Charger For Smartphone Laptop Tablet iPhone Xiaomi
+            properties = ['Black 50000mAH', 'Above 100000mAh']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 10, 2024', 'last_track_status': None}
+            price = 0.15
+            count = 1
+            tags = []
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 10, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/S6c8a0aa71b6743a5bce91a04662af280D.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005006340851453.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181994125848719
+        order_detail_date = Dec 14, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.15'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Total', 'value': '$0.15'}],
+        subtotal = 0.15
+        total = 0.15
+        store = Shop1103375191 Store
+        store_href = https://www.aliexpress.com/store/1103375191
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = 100000mAh Power Bank Type C PD 65W Fast Charging Powerbank External Battery Charger For Smartphone Laptop Tablet iPhone Xiaomi
+            properties = ['Blue 50000mAH', 'Above 100000mAh']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 10, 2024', 'last_track_status': None}
+            price = 0.15
+            count = 1
+            tags = []
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 10, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/S8bf864da294a4d2a8cc72a352fd69b3cR.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005006340851453.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181758279858719
+        order_detail_date = Dec 14, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.59'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Coins', 'value': '-$0.06'}, {'title': 'AliExpress Coupon', 'value': '-$0.15'}, {'title': 'Total', 'value': '$0.38'}],
+        subtotal = 0.59
+        total = 0.38
+        store = High End Emotional women&#39;s Clothing Store
+        store_href = https://www.aliexpress.com/store/1103366107
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = Women Sexy Lace Bra Female Brassiere Summer Soft Backless Beauty Back Wrap Chest Underwear Seamless Hollow Out Wireless Lingerie
+            properties = ['Blue', 'One Size', 'L-XL(80ABC)']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': None}
+            price = 0.59
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/Sa17657dd984b4cdeac58666cf54a800db.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005006323379363.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181567534208719
+        order_detail_date = Dec 14, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.59'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Coins', 'value': '-$0.06'}, {'title': 'AliExpress Coupon', 'value': '-$0.15'}, {'title': 'Total', 'value': '$0.38'}],
+        subtotal = 0.59
+        total = 0.38
+        store = High End Emotional women&#39;s Clothing Store
+        store_href = https://www.aliexpress.com/store/1103366107
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = New Women Lace Bras Top Comfortable Bralette Solid Color Sexy Underwear Vest Female Hollow Out Wireless Lingerie Seamless Bra
+            properties = ['Burgundy Bra', 'One Size', 'L XL(80ABC)']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': None}
+            price = 0.59
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/Saa5cf05c84894e6ebce839a19312a1ad0.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005006323319703.html
+        }
+        
+
+
+        status = Awaiting delivery
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181751231378719
+        order_detail_date = Dec 14, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$7.90'}, {'title': 'Shipping', 'value': '$0.22'}, {'title': 'Coins', 'value': '-$0.40'}, {'title': 'AliExpress Coupon', 'value': '-$3.05'}, {'title': 'Total', 'value': '$4.67'}],
+        subtotal = 7.9
+        total = 4.67
+        store = Sheee Store
+        store_href = https://www.aliexpress.com/store/1102320311
+        tracking = {
+            tracking_name = AliExpress Standard Shipping,
+            tracking_tag = Present,
+            tracking_code = MGRAE0003835397YQ,
+            other_track_codes = []
+        }
+        items = {
+            title = Pantyhose Winter Women Seamless Sexy Push Up Thick Fake Translucent Warm Velvet Autumn Thin Leggings Tights Pantyhose
+            properties = ['pure black full foot', '300g thick velvet']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': 'Click for more tracking information.'}
+            price = 7.9
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': 'Click for more tracking information.'}
+            image_url = https://ae01.alicdn.com/kf/S61d158b18b114cb2b7757aeba38f20f6h.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005004884818862.html
+        }
+        
+
+
+        status = Awaiting delivery
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8182227658628719
+        order_detail_date = Dec 14, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$5.87'}, {'title': 'Shipping', 'value': '$0.22'}, {'title': 'Coins', 'value': '-$0.29'}, {'title': 'AliExpress Coupon', 'value': '-$2.45'}, {'title': 'Total', 'value': '$3.35'}],
+        subtotal = 5.87
+        total = 3.35
+        store = Sheee Store
+        store_href = https://www.aliexpress.com/store/1102320311
+        tracking = {
+            tracking_name = AliExpress Standard Shipping,
+            tracking_tag = Present,
+            tracking_code = MGRAE0003835397YQ,
+            other_track_codes = []
+        }
+        items = {
+            title = Pantyhose Winter Women Seamless Sexy Push Up Thick Fake Translucent Warm Velvet Autumn Thin Leggings Tights Pantyhose
+            properties = ['pure skin full foot', '220g standard velvet']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': 'Click for more tracking information.'}
+            price = 5.87
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 12, 2024', 'last_track_status': 'Click for more tracking information.'}
+            image_url = https://ae01.alicdn.com/kf/Sefc015056b3d45f6a2d20f0dd2e757d4Q.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005004884818862.html
+        }
+        
+
+
+        status = Awaiting delivery
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181642988358719
+        order_detail_date = Dec 13, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$8.16'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Store Coupon', 'value': '-$3.00'}, {'title': 'Coins', 'value': '-$0.52'}, {'title': 'AliExpress Coupon', 'value': '-$2.03'}, {'title': 'Total', 'value': '$2.61'}],
+        subtotal = 8.16
+        total = 2.61
+        store = CINOON Official Store
+        store_href = https://www.aliexpress.com/store/122076
+        tracking = {
+            tracking_name = Aliexpress Selection Standard,
+            tracking_tag = Present,
+            tracking_code = LP00618685666597,
+            other_track_codes = []
+        }
+        items = {
+            title = CINOON 5Pcs/Lot Sexy No Trace Panties for Women Ice Silk Low Waist Underwear Sports Lingerie G-string Briefs Female Intimates
+            properties = ['BGNEF', 'XL(HIP 101-114CM)', 'CN', '5 PCS']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Package shipped out from warehouse'}
+            price = 8.16
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Package shipped out from warehouse'}
+            image_url = https://ae01.alicdn.com/kf/S0fcc7aa1624e4b2eb4b7c4b95054fcddk.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005005962023246.html
+        }
+        
+
+
+        status = Awaiting delivery
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181734993578719
+        order_detail_date = Dec 13, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$6.83'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Store Coupon', 'value': '-$3.00'}, {'title': 'Coins', 'value': '-$0.38'}, {'title': 'AliExpress Coupon', 'value': '-$1.52'}, {'title': 'Total', 'value': '$1.93'}],
+        subtotal = 6.83
+        total = 1.93
+        store = CINOON Official Store
+        store_href = https://www.aliexpress.com/store/122076
+        tracking = {
+            tracking_name = Aliexpress Selection Standard,
+            tracking_tag = Present,
+            tracking_code = LP00618684652935,
+            other_track_codes = []
+        }
+        items = {
+            title = CINOON 5Pcs/Lot Sexy Seamless Panties for Women No Show Thong V-waisted Stretch Breathable G String Underwear Comfort Intimates
+            properties = ['BGNEF', 'XL(HIP 95-108CM)', 'CN', '5 PCS']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Package shipped out from warehouse'}
+            price = 6.83
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Package shipped out from warehouse'}
+            image_url = https://ae01.alicdn.com/kf/Sede1a6d2af1942e28d3a4167ae1af2f2x.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005005955613667.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181932123978719
+        order_detail_date = Dec 13, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.02'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Total', 'value': '$0.02'}],
+        subtotal = 0.02
+        total = 0.02
+        store = INEED TINMASTER Store
+        store_href = https://www.aliexpress.com/store/3515029
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = Tin Sign
+            properties = []
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': None}
+            price = 0.01
+            count = 2
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/S864f5c78cc3848a5a7ccaf0db531a102U.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005005912034152.html
+        }
+        
+
+
+        status = Awaiting delivery
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181707797818719
+        order_detail_date = Dec 13, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$2.31'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Store Coupon', 'value': '-$2.00'}, {'title': 'Coins', 'value': '-$0.01'}, {'title': 'AliExpress Coupon', 'value': '-$0.04'}, {'title': 'Total', 'value': '$0.26'}],
+        subtotal = 2.31
+        total = 0.26
+        store = Meaeguet Official Store
+        store_href = https://www.aliexpress.com/store/535895
+        tracking = {
+            tracking_name = AliExpress Saver Shipping,
+            tracking_tag = Present,
+            tracking_code = SK464765965LV,
+            other_track_codes = []
+        }
+        items = {
+            title = Round Pave Zirconia CZ Stud Earrings for Women Girls, Danity Ear Jewelry Anniversary Christmas Gift
+            properties = ['EBS-132S']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Click for more tracking information.'}
+            price = 2.31
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Click for more tracking information.'}
+            image_url = https://ae01.alicdn.com/kf/S04a19d05d8c748239f409b1eb4eb03ffc.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005006327436060.html
+        }
+        
+
+
+        status = Awaiting delivery
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181510256408719
+        order_detail_date = Dec 13, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$1.77'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Store Coupon', 'value': '-$1.00'}, {'title': 'Coins', 'value': '-$0.08'}, {'title': 'AliExpress Coupon', 'value': '-$0.19'}, {'title': 'Total', 'value': '$0.50'}],
+        subtotal = 1.77
+        total = 0.5
+        store = ZOLGKKJ Store
+        store_href = https://www.aliexpress.com/store/5597068
+        tracking = {
+            tracking_name = AliExpress Saver Shipping,
+            tracking_tag = Present,
+            tracking_code = SK464259448LV,
+            other_track_codes = []
+        }
+        items = {
+            title = 5Pcs Double-sided Cleaning Spongs Household Scouring Pad Kitchen Dish Cloth Auto Sponge Wipe Cleaning Towels Accessories
+            properties = ['5pcs']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Departed from sorting center'}
+            price = 1.77
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Departed from sorting center'}
+            image_url = https://ae01.alicdn.com/kf/Sb558dcb5ff3b4d5aa693ac288eb53d857.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005006132345473.html
+        }
+        
+
+
+        status = Awaiting delivery
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181701074388719
+        order_detail_date = Dec 13, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.10'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Total', 'value': '$0.10'}],
+        subtotal = 0.1
+        total = 0.1
+        store = Shop5593006 Store
+        store_href = https://www.aliexpress.com/store/5593006
+        tracking = {
+            tracking_name = Cainiao Super Economy,
+            tracking_tag = Present,
+            tracking_code = SK465038522LV,
+            other_track_codes = []
+        }
+        items = {
+            title = Songyuexia Belly dance peacock false nail dance Indian Thai Golden Finger Jewelry For Belly Dance Dancing Finger Cot Costumes
+            properties = ['Silver', 'One Size']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Click for more tracking information.'}
+            price = 0.01
+            count = 10
+            tags = ['Fast Delivery', 'Free returns']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 11, 2024', 'last_track_status': 'Click for more tracking information.'}
+            image_url = https://ae01.alicdn.com/kf/S4dbf28086fd3415e868e79859f215f42A.png_220x220.png
+            item_url = https://www.aliexpress.com/item/1005005319543634.html
+        }
+        
+
+
+        status = Awaiting delivery
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181550968618719
+        order_detail_date = Dec 12, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.84'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Total', 'value': '$0.84'}],
+        subtotal = 0.84
+        total = 0.84
+        store = AOMIO Official Store
+        store_href = https://www.aliexpress.com/store/910732121
+        tracking = {
+            tracking_name = Cainiao Super Economy,
+            tracking_tag = Present,
+            tracking_code = SK463876280LV,
+            other_track_codes = []
+        }
+        items = {
+            title = 9PCS Colorful Telephone Wire Elastic Hair Bands for Girls Headwear Ponytail Holder Rubber Bands Women Chic Hair Accessories
+            properties = ['9Pcs-A5']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Feb 14, 2024', 'last_track_status': 'Click for more tracking information.'}
+            price = 0.84
+            count = 1
+            tags = ['Free returns']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Feb 14, 2024', 'last_track_status': 'Click for more tracking information.'}
+            image_url = https://ae01.alicdn.com/kf/H1cc6e654546a43f48932e8f235608d55d.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005003060006269.html
+        }
+        
+
+
+        status = Awaiting delivery
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181471528558719
+        order_detail_date = Dec 10, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$2.70'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Store Discount', 'value': '-$0.16'}, {'title': 'Store Coupon', 'value': '-$2.03'}, {'title': 'Coins', 'value': '-$0.02'}, {'title': 'AliExpress Coupon', 'value': '-$0.09'}, {'title': 'Total', 'value': '$0.40'}],
+        subtotal = 2.7
+        total = 0.4
+        store = AutoDream Store
+        store_href = https://www.aliexpress.com/store/1102625392
+        tracking = {
+            tracking_name = AliExpress Standard Shipping,
+            tracking_tag = Present,
+            tracking_code = RK157259395LV,
+            other_track_codes = []
+        }
+        items = {
+            title = 2PCS Car Rear View Mirror Film Stickers Cover Rainproof Hydrophobic Glass Mat Shade Trim For Car
+            properties = []
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 6, 2024', 'last_track_status': 'Received by warehouse'}
+            price = 0.9
+            count = 3
+            tags = []
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 6, 2024', 'last_track_status': 'Received by warehouse'}
+            image_url = https://ae01.alicdn.com/kf/S781ab4662198445d9090d2f13936f8e1t.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005005561263430.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8182231271538719
+        order_detail_date = Dec 10, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.10'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Total', 'value': '$0.10'}],
+        subtotal = 0.1
+        total = 0.1
+        store = Luvkiss Outlets Store
+        store_href = https://www.aliexpress.com/store/1103316506
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = 13x4 13x6 Straight Lace Front Wig HD Transparent Brazilian Human 5x5 Lace Closure Wig Hair Wigs For Women Lace Frontal Wig
+            properties = ['13x6 hd lace wig', 'CHINA', '6inches', '250%']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 6, 2024', 'last_track_status': None}
+            price = 0.1
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 6, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/Scde7656ac44247298c4ff13c835470d9D.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005006321081748.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181913422948719
+        order_detail_date = Dec 10, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.10'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Total', 'value': '$0.10'}],
+        subtotal = 0.1
+        total = 0.1
+        store = Luvkiss Outlets Store
+        store_href = https://www.aliexpress.com/store/1103316506
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = 13x4 13x6 Straight Lace Front Wig HD Transparent Brazilian Human 5x5 Lace Closure Wig Hair Wigs For Women Lace Frontal Wig
+            properties = ['13x4 hd lace wig', 'CHINA', '6inches', '180 density']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 6, 2024', 'last_track_status': None}
+            price = 0.1
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 6, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/Scde7656ac44247298c4ff13c835470d9D.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005006321081748.html
+        }
+        
+
+
+        status = To ship
+        contact_name = Liliia Borovyk
+        contact_phone = +380 990418697
+        delivery_address = Poltavskyi, Poltavska, Ukraine, 36021
+        order_detail_id = 8181470264588719
+        order_detail_date = Dec 10, 2023
+        order_detail_payment = Credit/Debit card,
+        price = [{'title': 'Subtotal', 'value': '$0.10'}, {'title': 'Shipping', 'value': 'Free shipping'}, {'title': 'Total', 'value': '$0.10'}],
+        subtotal = 0.1
+        total = 0.1
+        store = Luvkiss Outlets Store
+        store_href = https://www.aliexpress.com/store/1103316506
+        tracking = {
+            tracking_name = None,
+            tracking_tag = None,
+            tracking_code = None,
+            other_track_codes = []
+        }
+        items = {
+            title = 13x4 13x6 Straight Lace Front Wig HD Transparent Brazilian Human 5x5 Lace Closure Wig Hair Wigs For Women Lace Frontal Wig
+            properties = ['13x4 hd lace wig', 'CHINA', '6inches', '250%']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 6, 2024', 'last_track_status': None}
+            price = 0.1
+            count = 1
+            tags = ['Fast Delivery']
+            item_tracking_info = {'label': 'Estimated delivery date', 'value': 'Jan 6, 2024', 'last_track_status': None}
+            image_url = https://ae01.alicdn.com/kf/Scde7656ac44247298c4ff13c835470d9D.jpg_220x220.jpg
+            item_url = https://www.aliexpress.com/item/1005006321081748.html
+        }
+        
+

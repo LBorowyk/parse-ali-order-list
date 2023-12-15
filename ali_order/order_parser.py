@@ -1,3 +1,4 @@
+from selenium.common import ElementClickInterceptedException
 from selenium.webdriver.common.by import By
 from ali_order.order_item_details_parser import OrderItemDetailsParser
 from ali_order.order_tracking_details_parser import ParseTrackingInfo
@@ -87,9 +88,12 @@ class ParsedOrderDetails(ParsePage):
         return self
 
     def toggle_price(self, order_price_block):
-        toggle_price_details_button = order_price_block.find_element(By.CLASS_NAME, 'comet-icon-arrowdown')
-        toggle_price_details_button.click()
-        wait_for(self.driver, lambda d: d.find_element(By.CLASS_NAME, "comet-icon-arrowup"))
+        try:
+            toggle_price_details_button = order_price_block.find_element(By.CLASS_NAME, 'comet-icon-arrowdown')
+            toggle_price_details_button.click()
+            wait_for(self.driver, lambda d: d.find_element(By.CLASS_NAME, "comet-icon-arrowup"))
+        except ElementClickInterceptedException:
+            print('element comet-icon-arrowdown is not clickable. ')
         return self
 
     def parse_prices(self):

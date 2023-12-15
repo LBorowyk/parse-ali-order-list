@@ -19,17 +19,24 @@ def parse_order_list():
 
         print('get orders hrefs:')
         hrefs = get_orders_hrefs(driver)
-        hrefs = hrefs[0:5]
+
+        print('found ' + str(len(hrefs)) + ' hrefs for parsing')
+
+        data = ""
+        # hrefs = hrefs[0:5]
         # hrefs = hrefs[0:3]
         for order_detail_href in hrefs:
             driver.get(order_detail_href)
             wait_for(driver, lambda d: d.find_element(By.CLASS_NAME, "order-wrap"))
             item = ParsedOrderDetails(driver)
-            for detail in item.items:
-                if detail.image_url:
-                    save_image(
-                        download_image(detail.image_url),
-                        extract_file_name_from_url(detail.image_url)
-                    )
+            # for detail in item.items:
+            #     if detail.image_url:
+            #         save_image(
+            #             download_image(detail.image_url),
+            #             extract_file_name_from_url(detail.image_url)
+            #         )
+            data = data + item.to_string() + "\n\n"
 
-            print(item.to_string())
+        with open('result.txt', 'w') as file:
+            file.write(data)
+            # print(item.to_string())
